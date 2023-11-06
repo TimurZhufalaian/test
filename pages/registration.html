@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <!-- <link rel="stylesheet" href="../style.css"> -->
+  <style>
+    #car-image {
+      width: 200px;
+      /*ширина машинки */
+      height: 150px;
+      /*высота машинки */
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="../index.html">index</a>
+    <a href="articles.html">articles</a>
+    <a href="catalog.html">catalog</a>
+    <a href="gallery.html">gallery</a>
+    <a href="registration.html">registration</a>
+    <a href="contacts.html">contacts</a>
+    <a href="page-nav.html">page-nav</a>
+  </nav>
+  <form action="https://tests.fomenko.top/echo/index.php" method="post">
+
+    <h1>Registration</h1>
+
+    <fieldset>
+      <legend><strong>Fill in the information</strong></legend>
+      <div>
+        <label for="surname">Last Name</label>
+        <input id="surname" name="surname" placeholder="Last Name" type="text" required>
+      </div>
+      <div>
+        <label for="name">First Name</label>
+        <input id="name" name="name" placeholder="First Name" type="text" required>
+      </div>
+      <div>
+        <label for="patronymic">Middle Name</label>
+        <input id="patronymic" name="patronymic" placeholder="Middle Name" type="text">
+      </div>
+      <div>
+        <label for="file">Choose Photo</label>
+        <input id="file" name="file" type="file">
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input id="email" name="email" placeholder="Email" type="email" required>
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input id="password" name="password" placeholder="Password" type="password" required>
+      </div>
+      <div>
+        <label for="date">Date of Birth</label>
+        <input id="date" name="date" type="date" required>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend><strong>Choose gender</strong></legend>
+      <div>
+        <input id="gender-male" name="gender" type="radio" value="male">
+        <label for="gender-male">Male</label>
+      </div>
+      <div>
+        <input id="gender-female" name="gender" type="radio" value="female">
+        <label for="gender-female">Female</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend><strong>Select Your Preferred Car Brands</strong></legend>
+      <div>
+        <input id="car-brand-bmw" name="car-brand" type="radio" value="BMW" required>
+        <label for="car-brand-bmw">BMW</label>
+      </div>
+      <div>
+        <input id="car-brand-audi" name="car-brand" type="radio" value="Audi" required>
+        <label for="car-brand-audi">Audi</label>
+      </div>
+      <div>
+        <input id="car-brand-mercedes" name="car-brand" type="radio" value="Mercedes-Benz" required>
+        <label for="car-brand-mercedes">Mercedes-Benz</label>
+      </div>
+      <div>
+        <img id="car-image" src="../assets/img/avtosalon.jpg" alt="Car Image">
+      </div>
+    </fieldset>
+
+
+    <fieldset>
+      <legend><strong>Desires</strong></legend>
+      <div>
+        <label for="about"></label>
+        <textarea cols="40" id="about" name="about" placeholder="Your preferences in a car..." rows="5"></textarea>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div>
+        <button type="submit">Register</button>
+      </div>
+      <div>
+        <button type="reset">Clear Form</button>
+      </div>
+    </fieldset>
+
+    <script>
+      /* Эта операция позволяет нам получить доступ к радиокнопке с идентификатором "car-" в JavaScript.
+      Чтобы управлять его поведением. */
+
+      const bmwradio = document.getElementById('car-brand-bmw');
+      const audiradio = document.getElementById('car-brand-audi');
+      const mercedesradio = document.getElementById('car-brand-mercedes');
+      const carImage = document.getElementById('car-image');
+
+      bmwradio.addEventListener('change', function () {
+        if (bmwradio.checked) {
+          carImage.src = '../assets/img/BMW.jpg';
+
+        } else {
+          carImage.src = '../assets/img/avtosalon.jpg';
+        }
+      }
+      );
+
+      audiradio.addEventListener('change', function () {
+        if (audiradio.checked) {
+          carImage.src = '../assets/img/audi.jpg';
+        } else {
+          carImage.src = '../assets/img/avtosalon.jpg';
+        }
+      });
+
+      mercedesradio.addEventListener('change', function () {
+        if (mercedesradio.checked) {
+          carImage.src = '../assets/img/Mercedes.jpg';
+        } else {
+          carImage.src = '../assets/img/avtosalon.jpg';
+        }
+      });
+    </script>
+
+  </form>
+  <footer>
+    <address>
+
+      123 Manhattan, New York, USA
+      <br>
+      Email: example@example.com
+    </address>
+  </footer>
+</body>
+
+</html>
