@@ -416,8 +416,8 @@ legend {
 }
 .form-group-sm:hover {
   outline: 2px dotted white;
-}
+} */
 input[type="submit"]:hover,
 input[type="reset"]:hover {
   background-color: skyblue;
-} */
+}
