@@ -51,13 +51,17 @@ p {
 .container {
   width: 100%; /* Ширина контейнера 100% від ширини сторінки */
   max-width: 1280px; /* Максимальна ширина контейнера не більше 1280px */
-  margin: 0 auto; /* Розташуйте контейнер посередині сторінки */
+  margin: auto; /* Розташуйте контейнер посередині сторінки */
 
   padding: 20px; /* додає внутрішній відступ для контейнера */
   box-sizing: border-box; /* Забезпечте врахування внутрішніх відступів у розрахунок ширини елемента */
 }
 .content {
   min-height: calc(100vh - 100px - 100px);
+}
+
+.container.content_helper {
+  padding: 40px 0 100px 0;
 }
 /* .container {
   width: min(100% - 40px, 1340px);
@@ -107,7 +111,7 @@ p {
   font-family: "Uchen", serif;
   font-size: 120px;
   font-weight: 400;
-  margin-top: 215px;
+  margin-top: 50px;
   text-align: center;
   color: blue;
   text-transform: uppercase;
@@ -115,15 +119,14 @@ p {
 }
 
 .footer {
+  position: fixed;
+  bottom: 0;
   width: 100%;
-
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
   background-color: gray;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-top: 20px;
 }
+
 .article-name {
   font-size: 24px;
   font-family: "Roboto", sans-serif;
@@ -365,12 +368,17 @@ textarea {
 }
 .gallery_wrapper {
   display: flex;
-  gap: 20px;
+  /* gap: 70px; */
+  justify-content: space-between;
+  align-items: center;
 }
 .gallery_wrapper div {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.form-control-buttons-wrapper {
+  margin: 0 0 100px 0;
 }
 /* fieldset {
   max-width: 500px;
