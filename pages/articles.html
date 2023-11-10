@@ -5,60 +5,90 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Article</title>
+  <link rel="stylesheet" href="../style.css">
 </head>
 
+
 <body>
+  <header class="header">
 
-  <nav>
-    <a href="../index.html">index</a>
-    <a href="articles.html">articles</a>
-    <a href="catalog.html">catalog</a>
-    <a href="gallery.html">gallery</a>
-    <a href="registration.html">registration</a>
-    <a href="contacts.html">contacts</a>
-    <a href="page-nav.html">page-nav</a>
-  </nav>
-  <div>
-    <h1>Articles</h1>
+    <div class="container">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a class="navbar-link" href="../index.html">Главная</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="articles.html">Статьи</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="contacts.html">Контакты</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="gallery.html">Галерея</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="page-nav.html">Навигация</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="registration.html">Регистрация</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container content">
+    <h1>Статьи</h1>
+    <div>
+      <h2><a class="article-name" href="articles/first-article.html">Lorem ipsum dolor sit amet consectetur,
+          adipisicing
+          elit. Temporibus, maxime aliquid quaerat iure consequatur velit ducimus ex magni at blanditiis illum, cum
+          repudiandae inventore atque veritatis? Laborum velit alias molestiae.
+        </a></h2>
+      <p class="short-description">Lorem ipsum dolor sit amet consectetur, adipisicing
+        elit. Temporibus, maxime aliquid quaerat iure consequatur velit ducimus ex magni at blanditiis illum, cum
+        repudiandae inventore atque veritatis? Laborum velit alias molestiae.... &rsaquo;&rsaquo;&rsaquo;<a
+          class="further-links" href="articles/first-article.html">читать
+          далее</a></p>
+      <p><a class="comments-links" href="articles/first-article.html#comments">Перейти к комментариям</a></p>
+    </div>
+
+    <div>
+      <h2><a class="article-name" href="articles/second-article.html">Lorem ipsum dolor sit amet consectetur,
+          adipisicing
+          elit. Temporibus, maxime aliquid quaerat iure consequatur velit ducimus ex magni at blanditiis illum, cum
+          repudiandae inventore atque veritatis? Laborum velit alias molestiae.</a></h2>
+      <p class="short-description">Lorem ipsum dolor sit amet consectetur,
+        adipisicing
+        elit. Temporibus, maxime aliquid quaerat iure consequatur velit ducimus ex magni at blanditiis illum, cum
+        repudiandae inventore atque veritatis? Laborum velit alias molestiae... &rsaquo;&rsaquo;&rsaquo;<a
+          class="further-links" href="articles/second-article.html">читать
+          далее</a></p>
+      <p><a class="comments-links" href="articles/second-article.html#comments">Перейти к комментариям</a></p>
+    </div>
+
+    <div>
+      <h2><a class="article-name" href="articles/third-article.html">MODELS AND METHODS OFTHE CRISIS CONDITION
+          ASSESSMENT
+          OF ENGINEERING INDUSTRY BUSINESS ENTITIES</a></h2>
+      <p class="short-description">The article provides an analytical assessment of the crisis condition of
+        engineering industry business entities... &rsaquo;&rsaquo;&rsaquo;<a class="further-links"
+          href="articles/third-article.html">читать
+          далее</a></p>
+      <p><a class="comments-links" href="articles/third-article.html#comments">Перейти к комментариям</a></p>
+    </div>
   </div>
 
-  <div>
-    <h2><a href="articles/first-article.html">First article</a></h2>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis ipsam ad maxime sequi adipisci consequatur atque
-      architecto cupiditate molestias
-      porro praesentium minima, eveniet, necessitatibus eum laudantium amet! Quaerat, alias expedita.
-      <a href="articles/first-article.html">читати далі</a>
-    </p>
-    <p><a href="articles/first-article.html#comments">Перейти до коментарів</a></p>
-  </div>
-
-  <div>
-    <h2><a href="articles/second-article.html">Second article</a></h2>
-    <p>In the Victorian era, a woman’s hair was often thought to be one of her most valuable assets. Styles varied quite
-      a
-      bit throughout the nearly 7 decades of Queen Victoria's reign,...
-      <a href="articles/second-article.html">читати далі</a>
-    </p>
-    <p><a href="articles/second-article.html#comments">Перейти до коментарів</a></p>
-  </div>
-
-  <div>
-    <h2><a href="articles/third-article.html">Third article</a></h2>
-    <p>In the Victorian era, a woman’s hair was often thought to be one of her most valuable assets. Styles varied quite
-      a
-      bit throughout the nearly 7 decades of Queen Victoria's reign,...
-      <a href="articles/third-article.html">читати далі</a>
-    </p>
-    <p><a href="articles/third-article.html#comments">Перейти до коментарів</a></p>
-  </div>
-
-  <footer>
-    <address>
-
-      123 Manhattan, New York, USA
-      <br>
-      Email: example@example.com
-    </address>
+  <footer class="footer">
+    <div class="container">
+      <span>123 Manhattan, New York, USA
+        <br>
+        Email: example@example.com </span>
+    </div>
   </footer>
 </body>
 

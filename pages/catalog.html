@@ -5,51 +5,143 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Catalog</title>
+  <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
 
-  <nav>
-    <a href="../index.html">index</a>
-    <a href="articles.html">articles</a>
-    <a href="catalog.html">catalog</a>
-    <a href="gallery.html">gallery</a>
-    <a href="registration.html">registration</a>
-    <a href="contacts.html">contacts</a>
-    <a href="page-nav.html">page-nav</a>
-  </nav>
-  <h1>Catalog</h1>
-  <ul>
-    <li>
-      <h2>BMW</h2>
-      <ul>
-        <li>BMW M5 competition</li>
-        <li>BMW X5M</li>
-      </ul>
-    </li>
-    <li>
-      <h2>Mercedes-Benz</h2>
-      <ul>
-        <li>Maybach</li>
-        <li>G63</li>
-      </ul>
-    </li>
-    <li>
-      <h2>Audi</h2>
-      <ul>
-        <li>RS7</li>
-        <li>Q7</li>
-      </ul>
-    </li>
-  </ul>
+  <header class="header">
 
-  <footer>
-    <address>
-      <!-- Тег <address> для добавления информации об адресе -->
-      123 Manhattan, New York, USA
-      <br>
-      Email: example@example.com
-    </address>
+    <div class="container">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a class="navbar-link" href="../index.html">Главная</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="articles.html">Статьи</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="contacts.html">Контакты</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="gallery.html">Галерея</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="page-nav.html">Навигация</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="registration.html">Регистрация</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="container content">
+    <ul class="categories">
+      <li>
+        <img src="../assets/img/icons8-бонсай-26.png" alt="../assets/img/icons8-бонсай-25.png">
+        Квіти
+        <span class="new-label">new</span>
+        <ul class="subcategories">
+          <li>
+            <img src="../assets/img/icons8-бонсай-25.png" alt="../assets/img/icons8-бонсай-26.png">
+            Троянди
+          </li>
+          <li>
+            <img src="../assets/img/icons8-бонсай-25.png" alt="../assets/img/icons8-бонсай-26.png">
+            Рози
+          </li>
+        </ul>
+      </li>
+      <li>
+        <img src="../assets/img/icons8-бонсай-26.png" alt="../assets/img/icons8-бонсай-25.png">
+        Дерева
+        <ul class="subcategories">
+          <li>
+            <img src="../assets/img/icons8-бонсай-25.png" alt="../assets/img/icons8-бонсай-26.png">
+            Дуб
+            <span class="new-label">new</span>
+          </li>
+          <li>
+            <img src="../assets/img/icons8-бонсай-25.png" alt="../assets/img/icons8-бонсай-26.png">
+            Береза
+          </li>
+        </ul>
+      </li>
+      <li>
+        <img src="../assets/img/icons8-бонсай-26.png" alt="../assets/img/icons8-бонсай-25.png">
+        Ягоди
+        <span class="new-label">new</span>
+        <ul class="subcategories">
+          <li>
+            <img src="../assets/img/icons8-бонсай-25.png" alt="../assets/img/icons8-бонсай-26.png">
+            Калина
+          </li>
+          <li>
+            <img src="../assets/img/icons8-бонсай-25.png" alt="../assets/img/icons8-бонсай-26.png">
+            Полуниця
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- <div class="container content">
+    <ul class="categories">
+      <li>
+        <img src="../assets/img/icons8-бонсай-26.png" alt="../assets/img/icons8-бонсай-25.png">
+        Квіти
+        <ul class="subcategories">
+          <li>
+            <img src="../assets/img/icons8-бонсай-25.png" alt="../assets/img/icons8-бонсай-26.png">
+            Троянди
+          </li>
+          <li>
+            <img src="../assets/img/icons8-бонсай-25.png" alt="../assets/img/icons8-бонсай-26.png">
+            Рози
+          </li>
+        </ul>
+      </li>
+      <li>
+        <img src="../assets/img/icons8-бонсай-26.png" alt="../assets/img/icons8-бонсай-25.png">
+        Дерева
+        <ul class="subcategories">
+          <li>
+            <img src="../assets/img/icons8-бонсай-25.png" alt="../assets/img/icons8-бонсай-26.png">
+            Дуб
+          </li>
+          <li>
+            <img src="../assets/img/icons8-бонсай-25.png" alt="../assets/img/icons8-бонсай-26.png">
+            Береза
+          </li>
+        </ul>
+      </li>
+      <li>
+        <img src="../assets/img/icons8-бонсай-26.png" alt="../assets/img/icons8-бонсай-25.png">
+        Ягоди
+        <ul class="subcategories">
+          <li>
+            <img src="../assets/img/icons8-бонсай-25.png" alt="../assets/img/icons8-бонсай-26.png">
+            Калина
+          </li>
+          <li>
+            <img src="../assets/img/icons8-бонсай-25.png" alt="../assets/img/icons8-бонсай-26.png">
+            Полуниця
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div> -->
+  <footer class="footer">
+    <div class="container">
+      <span>123 Manhattan, New York, USA
+        <br>
+        Email: example@example.com </span>
+    </div>
   </footer>
 </body>
 

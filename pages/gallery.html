@@ -5,20 +5,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gallery</title>
+  <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
-  <nav>
-    <a href="../index.html">index</a>
-    <a href="articles.html">articles</a>
-    <a href="catalog.html">catalog</a>
-    <a href="gallery.html">gallery</a>
-    <a href="registration.html">registration</a>
-    <a href="contacts.html">contacts</a>
-    <a href="page-nav.html">page-nav</a>
-  </nav>
+  <div class="texture"></div>
 
-  <h1>Gallery</h1>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a class="navbar-link" href="../index.html">Главная</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="articles.html">Статьи</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="contacts.html">Контакты</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="gallery.html">Галерея</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="page-nav.html">Навигация</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="registration.html">Регистрация</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="container content">
+
+    <h1 class="name-of-the-gallery">Галерея</h1>
+
+    <div>
+      <img class="border-decorated" src="../assets/img/audi.jpg" alt="audi" width="200">
+      <a href="../assets/img/audi.jpg" target="_blank">1.Audi
+      </a>
+    </div>
+    <div>
+      <img class="border-decorated" src="../assets/img/BMW.jpg" alt="BMW" width="200">
+      <a href="../assets/img/BMW.jpg" target="_blank">2.BMW</a>
+    </div>
+    <div>
+      <img class="border-decorated" src="../assets/img/avtosalon.jpg" alt="night-in-the-mountains" width="200">
+      <a href="../assets/img/avtosalon.jpg" target="_blank">3.Avtosalon</a>
+    </div>
+  </div>
+
+  <!-- <h1>Gallery</h1>
   <div id="image-gallery">
     <figure>
       <a href="../assets/img/audi.jpg" target="_blank">
@@ -32,13 +73,14 @@
       </a>
       <figcaption>Формат: JPG</figcaption>
     </figure>
-  </div>
-  <footer>
-    <address>
-      123 Manhattan, New York, USA
-      <br>
-      Email: example@example.com
-    </address>
+  </div> -->
+
+  <footer class="footer">
+    <div class="container">
+      <span>123 Manhattan, New York, USA
+        <br>
+        Email: example@example.com </span>
+    </div>
   </footer>
 </body>
 

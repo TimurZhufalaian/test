@@ -1,3 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+
+  background-color: #649ee8ed;
+  background-image: url(assets/img/Mercedes-Logo.svg.png),
+    url(assets/img/circles-background-in-dark-tones_60389-166.avif);
+  background-repeat: no-repeat;
+  background-size: 100px, cover;
+  background-position: 98% 88%, 50% 50%;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+
+  background-color: #ffffff8f;
+}
+
+h1 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.container {
+  width: 100%; /* Ширина контейнера 100% від ширини сторінки */
+  max-width: 1280px; /* Максимальна ширина контейнера не більше 1280px */
+  margin: 0 auto; /* Розташуйте контейнер посередині сторінки */
+  padding: 0 20px; /* Внутрішні горизонтальні відступи контейнера 20px */
+  box-sizing: border-box; /* Забезпечте врахування внутрішніх відступів у розрахунок ширини елемента */
+}
+.content {
+  min-height: calc(100vh - 100px - 100px);
+
+  margin-top: 160px;
+  margin-bottom: 100px;
+}
+/* .container {
+  width: min(100% - 40px, 1340px);
+  margin-inline: auto;
+} */
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+
+  text-align: center;
+  background-color: rgb(16, 60, 180);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.navbar {
+}
+.navbar-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 20px;
+}
+.navbar-item {
+}
+.navbar-link {
+  color: white;
+  background-color: cadetblue;
+  padding: 0.75em 1.5em;
+  display: block;
+  text-transform: uppercase;
+  transition: 0.3s;
+  border-radius: 7px;
+}
+.navbar-link:hover {
+  background-color: tan;
+  transform: scale(1.2) translateY(10px);
+}
+
+.main {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+.logo {
+  font-family: "Uchen", serif;
+  font-size: 120px;
+  font-weight: 400;
+  margin-top: 215px;
+  text-align: center;
+  color: blue;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
+
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  background-color: gray;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.article-name {
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 2px solid purple;
+  color: blue;
+}
+.short-description {
+  background-color: gray;
+  color: rgba(255, 255, 255, 0.925);
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.different-first-letter::first-letter {
+  font-family: "Arial Black";
+  font-size: 36px;
+  color: crimson;
+}
+.name-of-the-article {
+  text-align: center;
+  color: blue;
+}
+.name-of-the-contact {
+  text-align: center;
+  color: black;
+}
+.name-of-the-catalog {
+  text-align: center;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.name-of-the-registration {
+  text-align: center;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+}
+.name-of-the-gallery {
+  font-size: 50px;
+  text-align: center;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a[target="_blank"] {
+  font-size: 30px;
+  color: black; /* Змінити колір для посилань, які відкриваються в новому вікні або вкладці */
+  font-weight: bold; /* (Опціонально) Зробити текст жирним */
+  text-decoration: underline; /* (Опціонально) Підкреслити текст */
+}
+
+.comments-links {
+  color: palegreen;
+}
+.visitor-name {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.795);
+}
+hr {
+  margin-top: 20px; /* Задайте відступ зверху (можна вказати іншу величину) */
+  margin-bottom: 20px; /* Задайте відступ знизу (можна вказати іншу величину) */
+}
+/* .list-marker-1 {
+  list-style-image: url("assets/img/63\ Arrow\ icons\ set.jpg");
+}
+.list-marker-2 {
+  list-style-image: url("assets/img/64\ Arrow\ icons\ set.jpg");
+} */
+p,
+ol,
+ul,
+li,
+a,
+h3,
+.visitor-name {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+}
+.categories {
+  list-style: none;
+  padding: 0;
+}
+
+.categories > li {
+  font-size: 28px; /* Задайте розмір шрифту для категорій */
+  background-color: gray; /* Задайте колір фону для категорій */
+  margin-bottom: 10px; /* Встановіть відступ між категоріями */
+  padding: 10px; /* Задайте внутрішній відступ для категорій */
+}
+
+.subcategories {
+  list-style: none;
+  padding: 0;
+}
+
+.subcategories > li {
+  font-size: 18px; /* Задайте розмір шрифту для підкатегорій */
+  background-color: gray; /* Задайте колір фону для підкатегорій */
+  padding: 9px; /* Задайте внутрішній відступ для підкатегорій */
+}
+.new-label {
+  color: #ff0000; /* Задайте бажаний колір для мітки "new" */
+  margin-left: 5px; /* Встановіть відступ зліва для мітки "new" */
+  font-weight: bold; /* (Опціонально) Зробіть мітку "new" жирною */
+}
+.texture {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+
+  background-color: rgb(255, 193, 78);
+  height: 100vh;
+  width: 100vw;
+  background-image: url(assets/img/gray-old-stone-road-surface.jpg);
+  background-size: 500px;
+  background-repeat: repeat;
+  background-position: top;
+}
+.border-decorated {
+  border-color: red;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.border-decorated:hover {
+  border-color: transparent;
+}
+* {
+  box-sizing: border-box;
+}
+fieldset {
+  max-width: 500px;
+  margin: 25px auto;
+  background-color: lightsteelblue;
+}
+select,
 input {
-  border: 5px solid skyblue;
+  width: 100%;
+  padding: 10px 20px;
+}
+input[type="file"] {
+  padding: 0;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: skyblue;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px 20px;
+  resize: vertical;
+  min-height: 75px;
+  max-height: 33vh;
+}
+legend {
+  transform: translateY(-10px);
+}
+.form-group:not(:first-of-type) {
+  margin: 15px 0 5px;
+}
+.form-group-sm {
+  margin: 10px 0 5px;
+}
+.hidden {
+  display: none;
+}
+.btn {
+  width: 100%;
+  padding: 10px 20px;
+}
+.form-group-sm {
+  margin: 0;
+  display: inline-block;
+  padding: 2px;
+}
+
+.form-group-sm:hover {
+  outline: 2px dotted white;
+  display: inline-block;
+}
+input[type="text"] {
+  text-transform: capitalize;
+}
+
+.map-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Опціонально: додайте відступ зверху */
+}
+
+.map-container iframe {
+  width: 600px; /* або інша потрібна ширина */
+  height: 450px; /* або інша потрібна висота */
 }
