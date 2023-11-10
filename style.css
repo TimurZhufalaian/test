@@ -52,14 +52,12 @@ p {
   width: 100%; /* Ширина контейнера 100% від ширини сторінки */
   max-width: 1280px; /* Максимальна ширина контейнера не більше 1280px */
   margin: 0 auto; /* Розташуйте контейнер посередині сторінки */
-  padding: 0 20px; /* Внутрішні горизонтальні відступи контейнера 20px */
+
+  padding: 20px; /* додає внутрішній відступ для контейнера */
   box-sizing: border-box; /* Забезпечте врахування внутрішніх відступів у розрахунок ширини елемента */
 }
 .content {
   min-height: calc(100vh - 100px - 100px);
-
-  margin-top: 160px;
-  margin-bottom: 100px;
 }
 /* .container {
   width: min(100% - 40px, 1340px);
@@ -67,14 +65,13 @@ p {
 } */
 
 .header {
-  position: fixed;
   width: 100%;
-  top: 0;
 
   text-align: center;
   background-color: rgb(16, 60, 180);
   padding-top: 30px;
   padding-bottom: 30px;
+  height: 10%;
 }
 
 .navbar {
@@ -99,7 +96,7 @@ p {
 }
 .navbar-link:hover {
   background-color: tan;
-  transform: scale(1.2) translateY(10px);
+  transform: scale(1.1);
 }
 
 .main {
@@ -118,14 +115,14 @@ p {
 }
 
 .footer {
-  position: fixed;
   width: 100%;
-  bottom: 0;
+
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
   background-color: gray;
   padding-top: 30px;
   padding-bottom: 30px;
+  margin-top: 20px;
 }
 .article-name {
   font-size: 24px;
@@ -278,11 +275,6 @@ input[type="file"] {
   padding: 0;
 }
 
-input[type="submit"]:hover,
-input[type="reset"]:hover {
-  background-color: skyblue;
-}
-
 textarea {
   width: 100%;
   padding: 10px 20px;
@@ -306,16 +298,17 @@ legend {
   width: 100%;
   padding: 10px 20px;
 }
+
 .form-group-sm {
-  margin: 0;
-  display: inline-block;
-  padding: 2px;
+  margin: 10px 0 5px;
 }
 
-.form-group-sm:hover {
-  outline: 2px dotted white;
-  display: inline-block;
-}
+/* .form-group-sm:hover input[type="checkbox"],
+.form-group-sm:hover input[type="radio"] {
+  outline: 2px dashed black; або будь-який інший стиль, який вам подобається
+  width: 100%;
+} */
+
 input[type="text"] {
   text-transform: capitalize;
 }
@@ -330,3 +323,93 @@ input[type="text"] {
   width: 600px; /* або інша потрібна ширина */
   height: 450px; /* або інша потрібна висота */
 }
+
+* {
+  box-sizing: border-box;
+}
+fieldset {
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: lightsteelblue;
+  padding: 10px 15px;
+}
+label {
+  display: block;
+  margin-bottom: 7px;
+}
+button,
+textarea,
+select,
+input {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid indigo;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+  display: inline-block;
+  margin-bottom: 0;
+}
+.form-group-sm:hover {
+  outline: 2px dotted white;
+}
+textarea {
+  resize: vertical;
+  min-height: 75px;
+  max-height: 33vh;
+}
+.gallery_wrapper {
+  display: flex;
+  gap: 20px;
+}
+.gallery_wrapper div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* fieldset {
+  max-width: 500px;
+  margin: 25px auto;
+  background-color: lightsteelblue;
+}
+select,
+input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 20px;
+}
+input[type="file"] {
+  padding: 0;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
+textarea {
+  width: 100%;
+  padding: 10px 20px;
+  resize: vertical;
+  min-height: 75px;
+  max-height: 33vh;
+}
+legend {
+  transform: translateY(-10px);
+}
+.form-group:not(:first-of-type) {
+  margin: 15px 0 5px;
+}
+.form-group-sm {
+  margin: 10px 0 5px;
+}
+.form-group-sm:hover {
+  outline: 2px dotted white;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: skyblue;
+} */
